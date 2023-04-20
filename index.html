@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>First Year Lab Cycle - CheatSheet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+<!-- Code highliter css CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css" integrity="sha512-o5v54Kh5PH0dgnf9ei0L+vMRsbm5fvIvnR/XkrZZjN4mqdaeH7PW66tumBoQVIaKNVrLCZiBEfHzRY4JJSMK/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="toggle-sidebar">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="header fixed-top d-flex align-items-center">
+      <div class="search-form d-flex align-items-center" method="POST" action="#">
+        <input id="myin" type="text" name="query" placeholder="Search Questions..." title="Enter search keyword" onkeyup="searchFunction()">
+        <button title="Search disabled"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </header>
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1><b>List Of Programs</b></h1>
+      <nav>
+        <br>
+      </nav>
+    </div>
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12" id="mymy">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">To accept two numbers and perform basic arithmetic
+                operations (+, - *, /, %)</h5>
+
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#a1" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f1" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c1" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade show active" id="a1" role="tabpanel" aria-labelledby="home-tab">
+                  Step 1: Start. <br>
+                  Step 2: Read two numbers. <br>
+                  Step 3: Compute addtion, subtraction, multiplication, division and modulo division between these numbers. <br>
+                  Step 4: Display results. <br>
+                  Step 5: Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f1" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                  <div class="col-lg-2">
+                  <img src="assets/img/flowcharts/s1q1.svg" class="d-block w-100"></img>
+                    </div>
+
+                </div>
+          
+                <div class="tab-pane fade" id="c1" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+                    
+int main()
+{
+  int a, b;
+  int sum, subtraction, multiplication, division, moduloDivision;
+
+  printf("Enter two numbers: ");
+  scanf("%d %d", &a, &b);
+
+  sum = a+b;
+  subtraction = a-b;
+  multiplication = a*b;
+  division = a/(float)b;
+  moduloDivision = a%b;
+
+  printf("Sum = %d\n", sum);
+  printf("Subtraction = %d\n", subtraction);
+  printf("Multiplication = %d\n", multiplication);
+  printf("Division = %f\n", division);
+  printf("Modulo division = %d\n", moduloDivision);
+
+  return 0;
+}
+                  </code></pre>
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">To find the volume of a Sphere using the formula,
+                Volume = (4/3) &pi; r&sup3;
+                </h5>
+
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#a2" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f2" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c2" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade show active" id="a2" role="tabpanel" aria-labelledby="home-tab">
+                  Step 1: Start. <br>
+                  Step 2: Read radius. <br>
+                  Step 3: Compute volume = (4/3)*&pi;*radius&sup3; <br>
+                  Step 4: Display volume. <br>
+                  Step 5: Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f2" role="tabpanel" aria-labelledby="profile-tab"><div class="col-lg-2">
+                  <img src="assets/img/flowcharts/s1q2.svg" class="d-block w-100"></img>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="c2" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+                           
+int main()
+{
+  int r;
+  float volume;
+
+  printf("Enter radius: ");
+  scanf("%d", &r);
+
+  volume = (4/3.0)*3.14*r*r*r;
+
+  printf("Volume of sphere with radius %d is: = %f\n", r, volume);
+
+  return 0;
+}
+                    </code></pre>
+                  
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">To find the area of a Triangle with 3 sides given using
+                formula, Area = √(s(s-a) (s-b) (s-c)) </h5>
+
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#a3" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f3" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c3" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade show active" id="a3" role="tabpanel" aria-labelledby="home-tab">
+                  Step 1: Start. <br>
+                  Step 2: Read three sides a, b, c. <br>
+                  Step 3: Compute semi parameter, s = [(a+b+c)/3] and area = &Sqrt;(s(s-a)(s-b)(s-c))<br>
+                  Step 4: Display area. <br>
+                  Step 5: Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f3" role="tabpanel" aria-labelledby="profile-tab">
+
+                  <div class="col-lg-2">
+                  <img src="assets/img/flowcharts/s1q3.svg" class="d-block w-100"></img>
+                    </div>
+        
+                  
+                </div>
+                <div class="tab-pane fade" id="c3" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+                    
+// To compute square root
+#include &lt;math.h&gt;
+
+int main()
+{
+  int a, b, c;
+  float s, area;
+
+  printf("Enter a, b and c: ");
+  scanf("%d %d %d", &a, &b, &c);
+
+  s = (a+b+c)/3.0;
+  area = sqrt(s*(s-a)*(s-b)*(s-c));
+
+  printf("Area of triangle is: %f\n", area);
+
+  return 0;
+}
+                    </code></pre>
+                  
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+
+<script>
+  // search krne k lie
+  const searchFunction = () => {
+    let filter = document.getElementById('myin').value.toUpperCase();
+    let card = document.querySelectorAll('.card');
+    let tr = document.querySelectorAll('.card-title');
+
+    for(var i =0; i<tr.length;i++){
+      let td = tr[i].textContent.toUpperCase();
+
+      if (td.indexOf(filter) > -1 ){
+        card[i].style.display="";
+      }
+      else if (filter==""){
+        card[i].style.display="";
+      }
+      else{
+        card[i].style.display="none";
+      }
+    }
+}
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+    <!-- code syntax highligting k liye -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js" integrity="sha512-bgHRAiTjGrzHzLyKOnpFvaEpGzJet3z4tZnXGjpsCcqOnAH6VGUx9frc5bcIhKTVLEiCO6vEhNAgx5jtLUYrfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>hljs.highlightAll();</script>
+
+
+
+</html>
