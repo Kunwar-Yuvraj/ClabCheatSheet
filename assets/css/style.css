@@ -207,10 +207,15 @@ h6 {
 
 /* Card */
 .card {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px 0 25px 0;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.session{
+  margin-top: 50px;
+  border-radius: 0;
 }
 
 .card-header,
@@ -222,7 +227,7 @@ h6 {
 }
 
 .card-title {
-  padding: 20px 0 15px 0;
+  padding: 20px 0 10px 0;
   font-size: 18px;
   font-weight: 500;
   color: #012970;
@@ -413,6 +418,7 @@ h6 {
 .header .search-form {
   width: 100%;
 }
+
 
 .header .search-form input {
   border: 0;
