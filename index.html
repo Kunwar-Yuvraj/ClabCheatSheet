@@ -38,7 +38,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1><b style="font-family: roboto;" id="programs">List Of Programs</b></h1>
+      <h1><b style="font-family: roboto;" id="main-prompt">List Of Programs</b></h1>
     </div>
 
     <section class="section" >
@@ -806,19 +806,40 @@ int main()
 <script>
   // search krne k lie
   const searchFunction = () => {
-    let filter = document.getElementById('myin').value.toUpperCase();
+    let input = document.getElementById('myin');
+    let filter = input.value.toUpperCase();
     let card = document.querySelectorAll('.card');
     let tr = document.querySelectorAll('.card-title');
+    let mainPrompt = document.getElementById('main-prompt');
+    let exists = 0;
+
     for(var i =0; i<tr.length;i++){
       let td = tr[i].textContent.toUpperCase();
 
       if (td.indexOf(filter) > -1 || filter==""){
         card[i].style.display="";
-        exist = 1;
       }
       else{
         card[i].style.display="none";
       }
+    }
+    for(var j=0; j<tr.length;j++){
+      if(card[j].style.display==''){
+        exists=1;
+        break;
+      }
+    }
+    if(exists==1){
+      input.style.color='green';
+      input.classList.remove('shake');
+      mainPrompt.textContent='List Of Programs';
+      input.style.border='none';
+    }
+    else{
+      input.style.color='red';
+      input.style.border='1px solid red';
+      mainPrompt.textContent='No such program exist';
+      input.classList.add('shake');
     }
 }
 
