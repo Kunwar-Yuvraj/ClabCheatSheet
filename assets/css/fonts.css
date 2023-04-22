@@ -4,6 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Playfair+Display+SC&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya&display=swap');
+
+#main-prompt{
+    font-family: 'Playfair Display SC', serif;
+    /* font-family: 'Arya', sans-serif; */
+}
 
 body{
     font-family: 'Roboto', sans-serif;
