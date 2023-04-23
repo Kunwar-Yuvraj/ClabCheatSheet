@@ -744,7 +744,7 @@ int main()
               <div class="tab-content pt-2" id="borderedTabContent">
                 <div class="tab-pane fade " id="a11" role="tabpanel" aria-labelledby="home-tab">
                   <b>Step 1:</b> Start. <br>
-                  <b>Step 2:</b> Read number. <br>
+                  <b>Step 2:</b> Read a number. <br>
                   <b>Step 3:</b> Check whether number gives 1 after bitwise-and(&) operation with 1 then odd; else even. <br>
                   <b>Step 4:</b> Display even or odd. <br>
                   <b>Step 5:</b> Stop. <br>
@@ -784,7 +784,471 @@ int main()
             </div>
           </div>
 
+
+    
+          <div class="session card">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 22px;">SESSION 4</h5>
+
+              <!-- Progress Bars with Striped Backgrounds-->
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><!-- End Progress Bars with Striped Animated Backgrounds -->
+
+            </div>
+          </div>
+
+
           
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> <div class="hide">session 4</div>To illustrate the use of increment operator (postfix &
+                prefix)</h5>
+
+              <!-- Bordered Tabs -->
+              <ul style="margin-bottom:.9em;" class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#a12" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f12" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link  active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c12" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade" id="a12" role="tabpanel" aria-labelledby="home-tab">
+                  <b>Step 1:</b> Start. <br>
+                  <b>Step 2:</b> Read a number. <br>
+                  <b>Step 3:</b> Display number before and after performing postfix and prefix increment. <br>
+                  <b>Step 4:</b> Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f12" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                  <div class="col-lg-3">
+                  <img src="assets/img/flowcharts/s4q1.svg" class="d-block w-100"></img>
+                    </div>
+
+                </div>
+          
+                <div class="tab-pane fade show active" id="c12" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+                    
+int main()
+{
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    printf("Number = %d\n", number);
+    printf("Printing number and doing postfix increment: %d\n", number++);
+    printf("Number after postfix increment = %d\n\n", number);
+
+    printf("Number = %d\n", number);
+    printf("Printing number and doing prefix increment: %d\n", ++number);
+    printf("Number after prefix increment = %d\n\n", number);
+    
+    return 0;
+}
+                  </code></pre>
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+          
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> <div class="hide">session 4</div>To illustrate the use of decrement operator (postfix &
+                prefix)</h5>
+
+              <!-- Bordered Tabs -->
+              <ul style="margin-bottom:.9em;" class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#a13" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f13" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link  active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c13" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade" id="a13" role="tabpanel" aria-labelledby="home-tab">
+                  <b>Step 1:</b> Start. <br>
+                  <b>Step 2:</b> Read a number. <br>
+                  <b>Step 3:</b> Display number before and after performing postfix and prefix decrement. <br>
+                  <b>Step 4:</b> Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f13" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                  <div class="col-lg-3">
+                  <img src="assets/img/flowcharts/s4q2.svg" class="d-block w-100"></img>
+                    </div>
+
+                </div>
+          
+                <div class="tab-pane fade show active" id="c13" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+                    
+int main()
+{
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    printf("Number = %d\n", number);
+    printf("Printing number and doing postfix decrement: %d\n", number--);
+    printf("Number after postfix decrement = %d\n\n", number);
+
+    printf("Number = %d\n", number);
+    printf("Printing number and doing prefix decrement: %d\n", --number);
+    printf("Number after prefix decrement = %d\n\n", number);
+    
+    return 0;
+}
+                  </code></pre>
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> <div class="hide">session 4</div>To perform the following using bitwise operators:
+                c = a & b ; d = a | b ; e = ~a
+                f = a >> n; g = a << n; h = a ^ b</h5>
+
+              <!-- Bordered Tabs -->
+              <ul style="margin-bottom:.9em;" class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#a14" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f14" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link  active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c14" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade" id="a14" role="tabpanel" aria-labelledby="home-tab">
+                  <b>Step 1:</b> Start. <br>
+                  <b>Step 2:</b> Read three numbers. <br>
+                  <b>Step 3:</b> Compute binary and, or, not, xor, right shift and left shift operations. <br>
+                  <b>Step 4:</b> Display results. <br>
+                  <b>Step 5:</b> Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f14" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                  <div class="col-lg-3">
+                  <img src="assets/img/flowcharts/s4q3.svg" class="d-block w-100"></img>
+                    </div>
+
+                </div>
+          
+                <div class="tab-pane fade show active" id="c14" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+                    
+int main()
+{
+    int a, b, n;
+    int c, d, e, f, g, h;
+    printf("Enter three number a, b and n: ");
+    scanf("%d %d %d", &a, &b, &n);
+    
+    c = a&amp;b;
+    d = a|b;
+    e = ~a;
+    f = a&gt;&gt;n;
+    g = a&lt;&lt;n;
+    h = a^b;
+
+    printf("a&amp;b = %d\n", c);
+    printf("a|b = %d\n", d);
+    printf("~a = %d\n", e);
+    printf("a&gt;&gt;n = %d\n", f);
+    printf("a&lt;&lt;n = %d\n", g);
+    printf("a^b = %d\n", h);
+    
+    return 0;
+}
+                  </code></pre>
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+
+      
+    
+          <div class="session card">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 22px;">SESSION 5</h5>
+
+              <!-- Progress Bars with Striped Backgrounds-->
+              <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><!-- End Progress Bars with Striped Animated Backgrounds -->
+
+            </div>
+          </div>
+    
+       
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> <div class="hide">session 5</div>To determine whether a given number is "Odd" or
+                "Even" and print the message NUMBER IS EVEN or
+                NUMBER IS ODD with and without using "else"
+                statement.</h5>
+
+              <!-- Bordered Tabs -->
+              <ul style="margin-bottom:.9em;" class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#a15" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f15" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link  active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c15" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade" id="a15" role="tabpanel" aria-labelledby="home-tab">
+                  <b>Step 1:</b> Start. <br>
+                  <b>Step 2:</b> Read a number. <br>
+                  <b>Step 3:</b> <ul><li>If number gives remainder 0 after division by 2 then it is even, else odd.</li><li>Compute even or odd.</li></ul>
+                  <b>Step 4:</b> Display number is even or odd. <br>
+                  <b>Step 5:</b> Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f15" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                  <div class="col-lg-3">
+                  <img src="assets/img/flowcharts/s5q1.svg" class="d-block w-100"></img>
+                    </div>
+
+                </div>
+          
+                <div class="tab-pane fade show active" id="c15" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+                    
+int main()
+{
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    printf("With using 'else' statement:\n");
+    if (n%2 != 0)
+    {
+        printf("NUMBER IS ODD\n");
+    }
+    else
+    {
+        printf("NUMBER IS EVEN\n");
+    }
+
+    printf("Without using 'else' statement:\n");
+    if (n%2 != 0)
+    {
+        printf("NUMBER IS ODD\n");
+    }
+    if (n%2 == 0)
+    {
+        printf("NUMBER IS EVEN\n");
+    }
+    
+    return 0;
+}
+                  </code></pre>
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+   
+            
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> <div class="hide">session 5</div>To determine whether a given number is "Positive",
+                Negative" or "ZERO" and print the message
+                "NUMBER IS POSITIVE", "NUMBER IS
+                NEGATIVE" or "NUMBER IS ZERO" using nested
+                "if" statement.
+                </h5>
+
+              <!-- Bordered Tabs -->
+              <ul style="margin-bottom:.9em;" class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#a16" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f16" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link  active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c16" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade" id="a16" role="tabpanel" aria-labelledby="home-tab">
+                  <b>Step 1:</b> Start. <br>
+                  <b>Step 2:</b> Read a number. <br>
+                  <b>Step 3:</b> Check whether number is greater than, or equal to or less than zero. <br>
+                  <b>Step 4:</b> Display number is negative, zero or positive. <br>
+                  <b>Step 5:</b> Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f16" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                  <div class="col-lg-3">
+                  <img src="assets/img/flowcharts/s5q2.svg" class="d-block w-100"></img>
+                    </div>
+
+                </div>
+          
+                <div class="tab-pane fade show active" id="c16" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+                    
+int main()
+{
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    if (n >= 0)
+    {
+        if (n == 0)
+        {
+            printf("NUMBER IS ZERO.\n");
+        }
+        else
+        {
+            printf("NUMBER IS POSITIVE.\n");
+        }
+    }
+    else
+    {
+        printf("NUMBER IS NEGATIVE.\n");
+    }                    
+    
+    return 0;
+}
+                  </code></pre>
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+   
+   
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> <div class="hide">session 5</div>To compute all the roots of a quadratic equation by
+                accepting the non-zero coefficients. Print appropriate
+                messages.
+                </h5>
+
+              <!-- Bordered Tabs -->
+              <ul style="margin-bottom:.9em;" class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#a17" type="button" role="tab" aria-controls="home" aria-selected="true">Algorithm</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#f17" type="button" role="tab" aria-controls="profile" aria-selected="false">Flowchart</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button    class="nav-link  active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#c17" type="button" role="tab" aria-controls="contact" aria-selected="false">Code</button>
+                </li>
+              </ul>
+              <div class="tab-content pt-2" id="borderedTabContent">
+                <div class="tab-pane fade" id="a17" role="tabpanel" aria-labelledby="home-tab">
+                  <b>Step 1:</b> Start. <br>
+                  <b>Step 2:</b> Read a number. <br>
+                  <b>Step 3:</b> Check whether number is greater than, or equal to or less than zero. <br>
+                  <b>Step 4:</b> Display number is negative, zero or positive. <br>
+                  <b>Step 5:</b> Stop. <br>
+                </div>
+                <div class="tab-pane fade" id="f17" role="tabpanel" aria-labelledby="profile-tab">
+                  
+                  <div class="col-lg-3">
+                  <img src="assets/img/flowcharts/s5q3.svg" class="d-block w-100"></img>
+                    </div>
+
+                </div>
+          
+                <div class="tab-pane fade show active" id="c17" role="tabpanel" aria-labelledby="contact-tab">
+                  
+                  <pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+                    
+int main()
+{
+    float a, b, c;
+    printf("Enter coefficient of x², x and a constant: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    if (a != 0)
+    {
+        float x1, x2;
+        float d = b*b-(4*a*c);
+
+        if (d > 0)
+        {
+            printf("Roots are real and different:\n");
+            x1 = (-b + sqrt(d)) / (2*a);
+            x2 = (-b + sqrt(d)) / (2*a);
+            printf("x1: %f, x2: %f\n", x1, x2);
+        }
+        else if (d == 0)
+        {
+            printf("Roots are real and equal:\n");
+            x1 = -b / (2*a);
+            printf("x1 = x2 = %f\n", x1);
+        }
+        else
+        {
+            printf("Roots are imaginary:\n");
+            float realPart = -b / (2*a);
+            float imgPart = sqrt(-d) / (2*a);
+            printf("x1: %f+%fi, x2: %f-%fi\n", realPart, imgPart, realPart, imgPart); 
+        }
+    }
+    else
+    {
+        printf("Equation is not quadratic.\n");
+    }
+    
+    return 0;
+}
+                  </code></pre>
+                </div>
+              </div>
+              <!-- End Bordered Tabs -->
+
+            </div>
+          </div>
+   
+
 
             </div>
           </div>
