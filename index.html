@@ -202,7 +202,7 @@ int main()
                 <div class="tab-pane fade " id="a3" role="tabpanel" aria-labelledby="home-tab">
                   <b>Step 1:</b> Start. <br>
                   <b>Step 2:</b> Read three sides a, b, c. <br>
-                  <b>Step 3:</b> Compute semi parameter, s = [(a+b+c)/3] and area = &Sqrt;(s(s-a)(s-b)(s-c))<br>
+                  <b>Step 3:</b> Compute semi parameter, s = [(a+b+c)/2] and area = &Sqrt;(s(s-a)(s-b)(s-c))<br>
                   <b>Step 4:</b> Display area. <br>
                   <b>Step 5:</b> Stop. <br>
                 </div>
@@ -230,7 +230,7 @@ int main()
   printf("Enter a, b and c: ");
   scanf("%d %d %d", &a, &b, &c);
 
-  s = (a+b+c)/3.0;
+  s = (a+b+c)/2.0;
   area = sqrt(s*(s-a)*(s-b)*(s-c));
 
   printf("Area of triangle is: %f\n", area);
